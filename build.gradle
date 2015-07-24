@@ -1,10 +1,8 @@
 buildscript {
     repositories {
-        maven { url "http://repo.spring.io/snapshot" }
-        maven { url "http://repo.spring.io/milestone" }
         maven { url "http://repo.spring.io/release" }
         mavenLocal()
-        mavenCentral()
+        jcenter()
     }
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:1.2.5.RELEASE")
@@ -17,14 +15,11 @@ apply plugin: 'idea'
 apply plugin: 'spring-boot'
 
 jar {
-    baseName = 'spring-boot-scala-web'
+    baseName = 'micro-infra-scala'
     version = '0.1.0'
 }
 
 repositories {
-    mavenCentral()
-    maven { url "http://repo.spring.io/snapshot" }
-    maven { url "http://repo.spring.io/milestone" }
     maven { url "http://repo.spring.io/release" }
     jcenter()
 }

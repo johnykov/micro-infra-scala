@@ -8,6 +8,6 @@ object SampleWebApplication {
   def main(args: Array[String]) {
     val application = new SpringApplication(classOf[SampleConfig])
     application.addListeners(new EnvironmentSetupVerifier(BasicProfiles.all))
-    application.run("asd")
+    application.run(args:_*)
   }
 }
