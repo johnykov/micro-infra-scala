@@ -21,3 +21,9 @@ Run the Spring boot main program using `runMain mvctest.SampleWebApplication`
 
 
 
+## Fire with:
+
+        -DAPP_ENV=dev
+        -Dspring.profiles.active=dev
+        -DCONFIG_FOLDER=/Users/.../properties
+        -Dmicroservice.config.file=classpath:microservice.json
