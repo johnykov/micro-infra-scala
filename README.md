@@ -1,7 +1,10 @@
-spring-boot-scala-web
+micro-infra-scala
 ====================
-A sample web application using spring-boot and Scala
+A sample web application using:
 
+*       spring-boot
+*       scala
+*       micro-infra-spring
 
 Using gradle as the build tool:
 -------------------------------
