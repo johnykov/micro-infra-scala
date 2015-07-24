@@ -1,0 +1,9 @@
+{
+  "dk": {
+    "this": "io/fourfinanceit/auto-repayments-vivus",
+    "dependencies": {
+      "backoffice": "com/ofg/loans/dk/backoffice-vivus-dk",
+      "payment-adapter": "com/ofg/payments/dibs-adapter"
+    }
+  }
+}

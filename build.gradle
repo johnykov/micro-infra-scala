@@ -3,10 +3,11 @@ buildscript {
 	    maven { url "http://repo.spring.io/snapshot" }
 	    maven { url "http://repo.spring.io/milestone" }
 	    maven { url "http://repo.spring.io/release" }
-	    mavenLocal()
+        mavenLocal()
+        mavenCentral()
     }
     dependencies {
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.2.3.RELEASE")
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.2.5.RELEASE")
     }
 }
 
@@ -26,6 +27,7 @@ repositories {
     maven { url "http://repo.spring.io/snapshot" }
     maven { url "http://repo.spring.io/milestone" }
     maven { url "http://repo.spring.io/release" }
+    jcenter()
  }
 
 dependencies {
@@ -40,6 +42,7 @@ dependencies {
     compile("org.scala-lang:scala-library:2.11.5")
     compile("org.webjars:bootstrap:3.1.1")
     testCompile("junit:junit")
+    compile 'com.ofg:micro-infra-spring-boot-starter:0.8.20'
 }
 
 task wrapper(type: Wrapper) {
