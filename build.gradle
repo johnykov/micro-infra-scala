@@ -1,8 +1,8 @@
 buildscript {
     repositories {
-	    maven { url "http://repo.spring.io/snapshot" }
-	    maven { url "http://repo.spring.io/milestone" }
-	    maven { url "http://repo.spring.io/release" }
+        maven { url "http://repo.spring.io/snapshot" }
+        maven { url "http://repo.spring.io/milestone" }
+        maven { url "http://repo.spring.io/release" }
         mavenLocal()
         mavenCentral()
     }
@@ -13,13 +13,12 @@ buildscript {
 
 apply plugin: 'java'
 apply plugin: 'scala'
-apply plugin: 'eclipse'
 apply plugin: 'idea'
 apply plugin: 'spring-boot'
 
 jar {
     baseName = 'spring-boot-scala-web'
-    version =  '0.1.0'
+    version = '0.1.0'
 }
 
 repositories {
@@ -28,7 +27,7 @@ repositories {
     maven { url "http://repo.spring.io/milestone" }
     maven { url "http://repo.spring.io/release" }
     jcenter()
- }
+}
 
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")

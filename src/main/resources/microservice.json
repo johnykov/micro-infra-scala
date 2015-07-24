@@ -1,9 +1,8 @@
 {
   "dk": {
-    "this": "io/fourfinanceit/auto-repayments-vivus",
+    "this": "io/fourfinanceit/expiring-credit-cards",
     "dependencies": {
-      "backoffice": "com/ofg/loans/dk/backoffice-vivus-dk",
-      "payment-adapter": "com/ofg/payments/dibs-adapter"
+      "backoffice": "com/ofg/loans/dk/backoffice-vivus-dk"
     }
   }
 }

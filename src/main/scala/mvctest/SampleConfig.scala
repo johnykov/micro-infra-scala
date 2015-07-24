@@ -1,8 +1,9 @@
 package mvctest
 
-import org.springframework.context.annotation.{ComponentScan, Configuration}
+import org.springframework.boot.autoconfigure.SpringBootApplication
 
-@Configuration
+//@Configuration
 //@EnableAutoConfiguration
-@ComponentScan
+//@ComponentScan
+@SpringBootApplication
 class SampleConfig
