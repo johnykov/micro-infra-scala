@@ -41,6 +41,8 @@ dependencies {
 
     testCompile("junit:junit")
     testCompile("org.springframework.boot:spring-boot-starter-test")
+    testCompile "com.ofg:micro-infra-spring-test:0.8.24"
+    testCompile 'org.scalatest:scalatest_2.11:2.2.5'
 }
 
 task wrapper(type: Wrapper) {
