@@ -27,6 +27,9 @@ A url listing the hotels is at [http://localhost:8080/hotels](http://localhost:8
         -DCONFIG_FOLDER=/Users/.../properties
         -Dmicroservice.config.file=classpath:microservice.json
 
+
+For `profile=prod` you require standalone zookeeper instance.
+
 ---
 
 ## Handlers from micro-infra-spring
