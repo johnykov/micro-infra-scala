@@ -2,7 +2,7 @@ spring:
  datasource:
    driver-class-name: org.h2.Driver
    url: jdbc:h2:mem:test;DB_CLOSE_ON_EXIT=FALSE;MVCC=true;DB_CLOSE_DELAY=-1
-   username: sa
+   username:
    password:
  jpa:
    database-platform: org.hibernate.dialect.H2Dialect

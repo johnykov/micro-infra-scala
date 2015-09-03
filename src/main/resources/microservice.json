@@ -1,8 +1,8 @@
 {
-  "dk": {
-    "this": "io/fourfinanceit/expiring-credit-cards",
+  "pl": {
+    "this": "pl/jan/hotel-manager",
     "dependencies": {
-      "backoffice": "com/ofg/loans/dk/backoffice-vivus-dk"
+      "backoffice": "pl/jan/hotel-inventory"
     }
   }
 }
