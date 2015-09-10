@@ -8,6 +8,7 @@ This sample web application using:
 *       spring-boot
 *       scala
 *       micro-infra-spring
+*       slick
 
 ## Using gradle as the build tool:
 

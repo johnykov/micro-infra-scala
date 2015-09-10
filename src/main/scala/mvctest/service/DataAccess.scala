@@ -13,10 +13,18 @@ class DataAccess @Autowired()(val db: Database) {
     result
   }
 
+  def add(input: String) = {
+    val setup = DBIO.seq(
+      personTable += (14, input)
+    )
+    db.run(setup)
+  }
 }
 
 class PersonTable(tag: Tag) extends Table[(Int, String)](tag, "PERSON") {
   def id = column[Int]("ID", O.PrimaryKey)
+
   def name = column[String]("NAME")
+
   def * = (id, name)
 }

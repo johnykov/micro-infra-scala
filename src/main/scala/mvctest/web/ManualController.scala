@@ -9,19 +9,24 @@ import scala.util.{Success, Failure}
 
 @RestController
 @RequestMapping(Array("/slick"))
-class ManualController @Autowired()(private val db: DataAccess){
+class ManualController @Autowired()(private val personDao: DataAccess){
 
   @RequestMapping
   def card():String = {
     import scala.concurrent.ExecutionContext.Implicits.global
     import scala.concurrent.duration._
-    val backendResult = db.getAll().map(o => o.map(_._2).mkString(","))
+    val backendResult = personDao.getAll().map(o => o.map(_._2).mkString(","))
 
     backendResult.onComplete {
       case Success(n) => println(n)
       case Failure(e) => println(e.getMessage)
     }
-    
-    Await.result(backendResult, 2 seconds).asInstanceOf[String]
+
+    Await.result(backendResult, 2 seconds)
+  }
+
+  @RequestMapping(Array("/add"))
+  def add() = {
+    personDao.add("jan")
   }
 }
