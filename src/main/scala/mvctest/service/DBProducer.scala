@@ -10,6 +10,6 @@ import slick.jdbc.JdbcBackend.Database
 @Component
 class DBProducer @Autowired()(val dataSource: DataSource) {
   @Bean
-  def createDatabase: Database =  Database.forDataSource(dataSource)
+  def createDatabase: Database = Database.forDataSource(dataSource)
 
 }

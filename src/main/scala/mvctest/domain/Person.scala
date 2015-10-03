@@ -8,7 +8,7 @@ import org.hibernate.validator.constraints.NotEmpty
 import scala.beans.BeanProperty
 
 @Entity
-class Hotel {
+class Person {
 
   @Id
   @GeneratedValue
@@ -28,5 +28,5 @@ class Hotel {
   var zip: String = _
 
 
-  override def toString = s"Hotel($id, $name, $address, $zip)"
+  override def toString = s"Person($id, $name, $address, $zip)"
 }

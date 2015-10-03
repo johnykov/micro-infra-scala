@@ -2,7 +2,7 @@ package mvctest.service
 
 import java.lang.Long
 
-import mvctest.domain.Hotel
+import mvctest.domain.Person
 import org.springframework.data.jpa.repository.JpaRepository
 
-trait HotelRepository extends JpaRepository[Hotel, Long]
+trait PersonRepository extends JpaRepository[Person, Long]

@@ -15,7 +15,7 @@ class DataAccess @Autowired()(val db: Database) {
 
   def add(input: String) = {
     val setup = DBIO.seq(
-      personTable += (14, input)
+      personTable +=(14, input)
     )
     db.run(setup)
   }
